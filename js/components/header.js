@@ -1,4 +1,9 @@
 export function header () {
+if ( location.hostname !== "localhost") {
+  const base = 
+}
+
+
   // const body = document.querySelector("body"); normalus uzrasymas bet galima ir trumpiau.
   //const body = document.body; 
 const menu = [
@@ -6,7 +11,8 @@ const menu = [
   {text: "Text", href: "/text"},
   {text: "Food", href: "/food"},
   {text: "Darzas", href: "/darzas"},
-  {text: "Header", href: "/header"}
+  {text: "Header", href: "/header"},
+  {text: "Click", href: "/click"},
 ];
 
 const lp = location.pathname;
